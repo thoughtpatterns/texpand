@@ -1,0 +1,10 @@
+CompileFlags:
+  Add:
+    - -xc
+    - -std=c99
+    - -Wall
+    - -Wextra
+    - -Wpedantic
+Diagnostics:
+  UnusedIncludes: Strict
+  MissingIncludes: Strict

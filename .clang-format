@@ -1,0 +1,16 @@
+BasedOnStyle: LLVM
+AlignAfterOpenBracket: BlockIndent
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
+BinPackArguments: false
+BreakBeforeBinaryOperators: NonAssignment
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: true
+  AfterStruct: true
+BreakStringLiterals: false
+ColumnLimit: 120
+IndentWidth: 8
+TabWidth: 8
+UseTab: ForIndentation

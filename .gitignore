@@ -1,0 +1,5 @@
+*.dSYM
+*.o
+/.direnv/
+/src/table.c
+/src/texpand
