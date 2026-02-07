@@ -2,6 +2,8 @@
 
 .POSIX:
 
+PREFIX ?= /usr/local
+
 CC = cc
 CFLAGS = -std=c99 -O3 -Wall -Wextra -Wpedantic
 GFLAGS = --struct-type --lookup-function-name=table --readonly-tables --omit-struct-type
@@ -25,4 +27,12 @@ ${TARGET}: ${OBJECTS}
 clean:
 	rm -f ${TARGET} ${OBJECTS} table.c
 
-.PHONY: all clean
+install: all
+	mkdir -p "${DESTDIR}${PREFIX}/bin"
+	cp -f texpand "${DESTDIR}${PREFIX}/bin"
+	chmod 755 "${DESTDIR}${PREFIX}/bin/texpand"
+
+uninstall:
+	rm -f "${DESTDIR}${PREFIX}/bin/texpand"
+
+.PHONY: all clean install uninstall

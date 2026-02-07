@@ -3,9 +3,17 @@
 Convert LaTeX macros to Unicode codepoints on standard input. Whitespace is
 trimmed from inputs.
 
+## Installation
+
+Requires `gperf`.
+
+```bash
+make -C ./src install
+```
+
 # Usage
 
-```
+```bash
 printf %s '\\theta' | texpand
 # θ
 
