@@ -64,7 +64,7 @@ will bind `<c-t>` in insert mode to a command which,
    the procured Unicode codepoint if successful; else, does nothing, and prints
    an error message to `*debug*`.
 
-Then, let `|` represent the cursor, so that our buffer is
+For example, let `|` represent the cursor, so that our buffer is
 ```
 \mu|
 ```
