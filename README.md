@@ -5,10 +5,10 @@ Convert LaTeX macros to Unicode codepoints on standard input.
 # Usage
 
 ```
-printf '%s' '\\theta' | texpand
+printf %s '\\theta' | texpand
 # θ
 
-printf '%s' '\\mathbb{Z}' | texpand
+printf %s '\\mathbb{Z}' | texpand
 # ℤ
 ```
 
