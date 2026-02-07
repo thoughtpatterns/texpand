@@ -1,11 +1,15 @@
 # texpand
 
-Convert LaTeX macros to Unicode codepoints on standard input.
+Convert LaTeX macros to Unicode codepoints on standard input. Whitespace is
+trimmed from inputs.
 
 # Usage
 
 ```
 printf %s '\\theta' | texpand
+# θ
+
+printf %s ' \\theta ' | texpand
 # θ
 
 printf %s '\\mathbb{Z}' | texpand
