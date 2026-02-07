@@ -11,7 +11,7 @@ Requires `gperf`.
 make -C ./src install
 ```
 
-# Usage
+## Usage
 
 ```bash
 printf %s '\\theta' | texpand
