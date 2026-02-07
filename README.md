@@ -13,5 +13,5 @@ printf %s '\\mathbb{Z}' | texpand
 ```
 
 Macros which take an argument require `{}` around the argument. Subscripts and
-superscripts are not supported; see
+superscripts are not supported; if this is unacceptable, see
 [UnicodeIt](https://github.com/svenkreiss/unicodeit).
