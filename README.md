@@ -1,6 +1,6 @@
 # texpand
 
-Convert LaTeX macros to Unicode codepoints on standard input. Whitespace is
+Convert LaTeX macros to Unicode characters on standard input. Whitespace is
 trimmed from inputs.
 
 ## Installation
@@ -46,7 +46,7 @@ define-command texpand-word %{ evaluate-commands -draft -save-regs 'e|' -no-hook
 		rm -rf "$root"
 	}
 
-	execute-keys 'h<a-b>|<ret>'
+	execute-keys 'h<a-f>\|<ret>'
 	%reg{e}
 }}
 
@@ -54,9 +54,9 @@ map global insert <c-t> '<a-;>: texpand-word<ret>'
 ```
 
 will bind `<c-t>` in insert mode to a command, which,
-1. selects the previous word,
+1. selects to the last `\`,
 2. passes the selection to `texpand`,
-3. and replaces the selected word with the procured Unicode codepoint if
+3. and replaces the selected word with the procured Unicode character if
    successful; else, does nothing, and prints an error message to `*debug*`.
 
 For example, let `|` represent the cursor, so that our buffer is

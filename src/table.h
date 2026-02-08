@@ -4,7 +4,7 @@
 struct Replacement
 {
 	const char *name;
-	const char *codepoint;
+	const char *unicode;
 };
 
 #endif /* table_h_INCLUDED */

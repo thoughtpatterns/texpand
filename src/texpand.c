@@ -51,13 +51,13 @@ int main(void)
 	while (len > 0 && isspace((unsigned char)start[len - 1])) len -= 1;
 	start[len] = '\0';
 
-	/* Print codepoint. */
+	/* Print character. */
 
 	const struct Replacement *r = table(start, len);
 	free(buf);
 
-	if (!r) die("failed to find input macro's codepoint");
-	printf("%s", r->codepoint);
+	if (!r) die("failed to find unicode for input macro");
+	printf("%s", r->unicode);
 
 	return EXIT_SUCCESS;
 }

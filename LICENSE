@@ -13,8 +13,8 @@ PERFORMANCE OF THIS SOFTWARE.
 
 ---
 
-The map from LaTeX macros to Unicode codepoints in './src/table.gperf' was
-taken from the UnicodeIt project, whose license is reproduced below.
+The map from LaTeX macros to Unicode in './src/table.gperf' was taken from the
+UnicodeIt project, whose license is reproduced below.
 
 ---
 
