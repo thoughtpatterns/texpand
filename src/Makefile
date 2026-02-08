@@ -25,11 +25,11 @@ ${TARGET}: ${OBJECTS}
 	${CC} -o $@ ${OBJECTS}
 
 clean:
-	rm -f ${TARGET} ${OBJECTS} table.c
+	rm -f "${TARGET}" ${OBJECTS} table.c
 
 install: all
 	mkdir -p "${DESTDIR}${PREFIX}/bin"
-	cp -f texpand "${DESTDIR}${PREFIX}/bin"
+	cp -f "${TARGET}" "${DESTDIR}${PREFIX}/bin"
 	chmod 755 "${DESTDIR}${PREFIX}/bin/texpand"
 
 uninstall:
